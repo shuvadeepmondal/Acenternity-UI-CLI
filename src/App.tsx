@@ -1,20 +1,22 @@
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./components/home/Home";
-import Navbar from "./components/utilis/Navbar";
+
+
+import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 
 const App: React.FC = () => {
   return (
     <>
+     
+      <BackgroundBeamsWithCollision >
       <div>
-        <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
-
         </Routes>
       </div>
+        </BackgroundBeamsWithCollision> 
     </>
   );
+
 }
 
 export default App;
